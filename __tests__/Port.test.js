@@ -9,9 +9,9 @@ describe("Port", () => {
 
     beforeEach(() => {
       port = new Port("name");
-      ship = {};
-      titanic = {};
-      queenMary = {};
+      ship = jest.fn();
+      titanic = jest.fn();
+      queenMary = jest.fn();
     });
 
     it("can be instantiated", () => {
